@@ -1,0 +1,67 @@
+.lotteryNumberContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap; // Prevents wrapping of items'
+  padding-left: 1rem;
+  padding-right: 1rem;
+  background-color: #8A8989;
+  border-radius: 100px;
+}
+
+.lotteryNumberBanner {
+  font-size: 1rem;
+  margin-bottom: 2%;
+  color: white;
+}
+
+.lottery-number {
+  margin-bottom: 2%;
+  background: linear-gradient(135deg, #ffffff, #505050);
+  color: black;
+  border-radius: 50%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 3.3rem; // Size of the balls
+  height: 3.3rem; // Size of the balls, should be the same as width
+  font-size: 2rem; // Size of the number text
+}
+
+.Slottery-number {
+  background-color: gold;
+  color: black;
+  border-radius: 50%;
+  text-align: center;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px; // Size of the balls
+  height: 60px; // Size of the balls, should be the same as width
+  font-size: 24px; // Size of the number text
+  margin-right: 20px; // Half of the width of the ball, adjust as needed
+
+  &:last-child {
+    margin-right: 0; // Removes margin from the last item
+  }
+}
+
+
+@media (max-width: 768px) {
+  .lottery-number {
+    margin-bottom: 2%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 2.3rem; // Size of the balls
+    height: 2.3rem; // Size of the balls, should be the same as width
+    font-size: 1rem; // Size of the number text
+  }
+
+  .lotteryPotDisplayContent.span {
+    font-size: 1rem;
+  }
+}

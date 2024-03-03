@@ -1,0 +1,45 @@
+.viewer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  overflow: auto;
+
+  &::-webkit-scrollbar {
+    width: .5rem;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: #D8D8D8;
+    border-radius: .25rem
+  }
+
+  &::-webkit-scrollbar-track {
+    background-color: #626262;
+    border-radius: .25rem
+  }
+}
+
+.ticket {
+  border-radius: 8px;
+  max-height: 1.2rem;
+  padding: 1px;
+  margin: 2px;
+  display: flex;
+  justify-content: space-around;
+  background-color: #f9f9f9;
+  cursor: default;
+}
+
+.number-box {
+  text-align: center;
+  min-width: 30px;
+  border-radius: 4px;
+  color: black;
+  text-decoration: underline;
+}
+
+.winner {
+  cursor: pointer;
+
+  background: linear-gradient(135deg, rgb(140, 27, 171) 0%, rgb(247, 97, 161) 100%);
+}

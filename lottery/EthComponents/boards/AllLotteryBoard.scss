@@ -1,0 +1,95 @@
+//Past loto
+//0.35
+//17 rem
+//0.35 rem
+//30rem
+//tot 47.7
+//current loto
+//0.35
+//5rem
+//0.35
+//39 rem
+//tot 44.7
+.lotteryBanner {
+  font-size: 2.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: .25rem;
+  color: white;
+}
+
+.lotteryIcon {
+  color: white;
+  font-size: 2rem;
+  margin-right: 10px;
+}
+
+.contentContainer {
+  display: flex;
+  flex-direction: row;
+}
+
+.previousLotteriesContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  max-height: 30rem;
+  overflow: auto;
+
+  &::-webkit-scrollbar {
+    width: .5rem;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: #D8D8D8;
+    border-radius: .25rem
+  }
+
+  &::-webkit-scrollbar-track {
+    background-color: #626262;
+    border-radius: .25rem
+  }
+}
+
+.curLotteryInfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #8A8989;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 60px;
+}
+
+.curLotteryBuy {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: #8A8989;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  border-radius: 60px;
+}
+
+.buyButton {
+  font-size: 1.5rem;
+  background-color: #23C520;
+  margin-left: 1rem;
+}
+
+.curLotteryTickets {
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .contentContainer {
+    display: flex;
+    flex-direction: column;
+  }
+}
